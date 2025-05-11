@@ -1,5 +1,6 @@
 'use client'
 import { useEffect } from 'react'
+import Intro from '@/app/components/Intro'
 
 const HomePage = () => {
     useEffect(() => {
@@ -9,12 +10,9 @@ const HomePage = () => {
         })()
     }, [])
     return (
-        <div className='flex flex-col gap-6'>
-            <div className='h-screen w-full bg-amber-400'></div>
-            <div className='h-screen w-full bg-amber-400'></div>
-            <div className='h-screen w-full bg-amber-400'></div>
-            <div className='h-screen w-full bg-amber-400'></div>
-        </div>
+        <main>
+            <Intro />
+        </main>
     )
 }
 export default HomePage
